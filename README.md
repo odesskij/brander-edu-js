@@ -30,12 +30,12 @@ console.log(fib(10)) // => 55
 
   - (1) -- метод, который провоцирует событие:
     * event -- имя события {String}
-    * [\*agrs] -- необязательные аргумент, будут переданны в функцию обработчик.
+    * [\*agrs] -- необязательные аргумент, будут переданны в функцию обработчик(callback).
   - (2) -- метод для подписки на событие
     * event -- имя события {String}
     * callback -- обработчик {Function}
     * [context] -- необязательные агрумент, контекст в котором будет вызван callback. {Object}
-  - (3) -- убирает обработчик событий (как у Backbone.Events). (Сигнатура как у (2))
+  - (3) -- убирает обработчик событий (@see Backbone.Events). (Сигнатура как у (2))
 
 ####Как должно выглядеть и работать:
 ````javascript
@@ -52,9 +52,11 @@ console.log(fib(10)) // => 55
 
 
   for(var i=0; i<3; i++) {
-    objectTwo.on('eventTwo', function(){
-      console.log('event => ' + i);
-    });
+    (function(index){
+      objectTwo.on('eventTwo', function(){
+        console.log('event => ' + index);
+      });
+    })(i);
   }
 
   objectTwo.trigger('eventTwo');
