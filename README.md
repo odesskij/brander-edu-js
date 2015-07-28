@@ -98,6 +98,7 @@ console.log(fib(10)) // => 55
 и еще две Backbone.View(ListView и StatView) для вкладок соответственно. + сделать кнопку для обновления данных с коллекции(UserCollection.fetch)
 Нужные библиотеки(Backbone, Underscore) подтянуть как удобно. 
 По желанию, использовать Backbone.Router для привязки вкладки к url(можно на последнюю очередь сделать)
+
 ####Ссылки:
 http://underscorejs.org/ (http://underscorejs.ru/)
 http://backbonejs.org/ (http://backbonejs.ru/)
