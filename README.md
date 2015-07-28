@@ -100,8 +100,8 @@ console.log(fib(10)) // => 55
 По желанию, использовать Backbone.Router для привязки вкладки к url(можно на последнюю очередь сделать)
 
 ####Ссылки:
-http://underscorejs.org/ (http://underscorejs.ru/)
-http://backbonejs.org/ (http://backbonejs.ru/)
+* http://underscorejs.org/ (http://underscorejs.ru/)
+* http://backbonejs.org/ (http://backbonejs.ru/)
 
 -----------------
 Каждое задание вылить на [github](https://github.com/) в ввиде отдельного [репозитория](https://help.github.com/articles/create-a-repo/).
