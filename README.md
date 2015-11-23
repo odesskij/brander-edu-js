@@ -83,8 +83,6 @@ console.log(fib(10)) // => 55
   //Ничего не произошло.
 ````
 
-- https://gist.github.com/odesskij/b18bbdce73a63472b488
-
 ###4. Backbone.UserList
 ####Описание:
 Страница с вкладками:
